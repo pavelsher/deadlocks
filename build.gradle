@@ -1,0 +1,19 @@
+allprojects {
+    group 'org.jetbrains'
+    version '1.0-SNAPSHOT'
+
+    apply plugin: 'java'
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        compile 'org.springframework:spring-context:4.1.7.RELEASE'
+        compile 'org.springframework:spring-jdbc:4.1.7.RELEASE'
+        compile 'commons-dbcp:commons-dbcp:1.4'
+        compile 'mysql:mysql-connector-java:5.1.6'
+        testCompile 'org.testng:testng:6.9.4'
+    }
+}
+
